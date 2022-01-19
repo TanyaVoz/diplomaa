@@ -1,0 +1,965 @@
+
+*::before, *::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+body {
+	margin: 0;
+	padding: 0;
+}
+.header {
+  padding-top: 35px;
+  background-image: url(https://netology-code.github.io/html-2-diploma/sources/images/banner-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-color: #000000;
+  position: relative;
+  z-index: 0;
+}
+.header::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #000000;
+  opacity: 0.6;
+  z-index: -1;
+}
+.menu-burger {
+	display: none;
+}
+
+/*.container-main {
+max-width: 1660px;
+}*/
+.container {
+  margin-right: auto;
+  margin-left: auto;
+	padding-left: 15px;
+  padding-right: 15px;
+  max-width: 1200px;
+}
+
+.logo-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom:120px;
+}
+.logo {
+  width: 180px;
+}
+.menu-list-item {
+  display: inline;
+}
+.menu-list-item:nth-child(n+2) {
+  margin-left: 25px;
+}
+.menu-list a {
+  font-family: open-sans-regular, Arial, sans-serif;
+  font-size: 13px;
+  text-transform: uppercase;
+  color: white;
+}
+.header-title {
+  max-width: 700px;
+  font-family: open-sans-bold, Arial, sans-serif;
+  font-size: 45px;
+  text-transform: uppercase;
+  color: white;
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+  line-height: 1.6;
+  padding-bottom: 100px;
+}
+
+.page {
+max-width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 64px;
+}
+/*вспл форма*/
+.feedback {
+	position: absolute;
+    /*width: 1px;
+    height: 1px;
+    clip: rect(1px, 1px, 1px, 1px);*/
+}
+@media  (min-width: 641px) and (max-width: 1199px) {
+	.posts {
+		display: flex;
+	flex-wrap: wrap;
+	}
+
+}
+.main-posts {
+max-width: 780px;
+
+}
+
+.posts {
+  justify-content: space-between;
+  display: flex;
+}
+
+.posts:nth-child(n+2) {
+  margin-top: 60px;
+}
+/*тренды*/
+.trends {
+ max-width: 1660px;
+	margin: 60px auto 0 auto;
+}
+.section-title {
+	font-size: 20px;
+	color: #0f0d0e;
+	font-weight: bold;
+	text-transform: uppercase;
+	text-align: center;
+}
+.section-title::after {
+	content: "";
+	display: block;
+	width: 65px;
+	height: 3px;
+	margin: 15px auto 30px auto;
+	background-color: #b59f5b;
+	opacity: 0.4;
+}
+.trends-now {
+  display: flex;
+
+
+  /*flex-wrap: wrap;
+		width: calc(50% - 4px);*/
+
+}
+.trend {
+  display: flex;
+	align-items: flex-end;
+	width: calc(25% - 3px);
+  padding-left: 20px  ;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  padding-top: 8%;
+  margin-right: 4px;
+	margin-bottom: 4px;
+  flex-grow: 1;
+  position: relative;
+	z-index: 0;
+}
+.trend::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #000000;
+  opacity: 0.6;
+  z-index: -1;
+}
+.trend:last-child {
+  margin-right: 0;
+}
+
+.trends-item {
+	width: 100%;
+	padding: 40px 40px 35px 25px;
+	border: solid 3px rgba(181, 159, 91, 0.6);
+}
+.trend-title-link {
+	font-size: 20px;
+	color: #ffffff;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+.trend-title-link:hover,
+.trend-title-link:focus {
+	color: #b59f5b;
+	outline: none;
+}
+
+.trend-item-garden  {
+  background-image: url("../images/trend1.jpg");
+   background-size: cover;
+}
+
+
+.trend-item-cheese {
+  background-image: url("../images/trend2.jpg");
+  background-size: cover;
+}
+.trend-item-travel {
+  background-image: url("../images/trend3.jpg");
+  background-size: cover;
+}
+.trend-item-health {
+  background-image: url("../images/trend4.jpg");
+  background-size: cover;
+}
+
+
+/*post*/
+
+.img-post {
+  max-width: 380px;
+}
+.post {
+  max-width: 367px;
+  margin-left: 30px;
+}
+.subtitle {
+	padding-left: 0;
+}
+.subtitle-post-item {
+  display: inline;
+}
+.subtitle-post-item:nth-child(n+2) {
+	margin-left: 20px;
+}
+.subtitle a {
+  font-family: open-sans-bold, Arial, sans-serif;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #b6a15f;
+}
+.subtitle a:hover {
+  text-decoration: underline;
+}
+.title-post {
+  margin-bottom: 30px;
+}
+.title-post a {
+  font-family: open-sans-bold, Arial, sans-serif;
+  font-size: 20px;
+  text-transform: uppercase;
+  color: black;
+}
+.date {
+  font-family: open-sans-regular, Arial, sans-serif;
+  font-size: 12px;
+  line-height: 1.3;
+  color: #999999;
+
+}
+
+.autor {
+  font-family: open-sans-bold, Arial, sans-serif;
+  font-size: 12px;
+  margin-left: 16px;
+  color: black;
+}
+.post-content {
+  font-family: open-sans-regular, Arial, sans-serif;
+  font-size: 15px;
+  text-align: justify;
+  line-height: 1.5;
+  margin-top: 55px;
+}
+
+.new {
+max-width: 272px;
+	flex-shrink: 0;
+}
+
+.new-post {
+  display: flex;
+}
+
+.new-post:nth-child(n+3) {
+  margin-top: 21px;
+}
+.new-post:nth-child(6) {
+  margin-bottom: 57px;
+}
+.new-header {
+  font-family: open-sans-bold, Arial, sans-serif;
+  font-size: 14px;
+  text-transform: uppercase;
+  text-align: center;
+}
+.new-header::after {
+  content:"";
+  display: block;
+  width: 66px;
+  height: 2px;
+  background-color: #baa566;
+  margin: 16px auto 27px;
+
+}
+
+.new-img-post {
+  max-width: 70px;
+}
+.box-post {
+  margin-left: 22px;
+  width: 180px;
+}
+.new-title-post  {
+  font-family: open-sans-bold, Arial, sans-serif;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: black;
+  line-height: 1.3;
+
+}
+.new-title-post a {
+  color: black ;
+}
+
+.search  {
+  margin-bottom: 63px;
+}
+
+.search-one {
+  margin-bottom: 63px;
+}
+.search .search-input {
+  width: 272px;
+  height: 51px;
+  padding-left: 20px;
+  background-color: #f4f7f6;
+  font-size: 13px;
+  border: none;
+  margin-bottom: 18px;
+}
+.field,
+.button {
+  position: absolute;
+  clip: rect(1px, 1px, 1px, 1px);
+  height: 1px;
+  width: 1px;
+}
+.btn-search {
+  background-image: url("https://netology-code.github.io/html-2-diploma/sources/images/search.svg");
+  background-repeat: no-repeat;
+  background-size: 18px;
+  background-position: center center;
+  width: 50px;
+  height: 47px;
+  position: absolute;
+  margin: 0;
+  background-color: #b59f5b;
+  border: none;
+}
+.btn-search:hover{
+  background-color: #323232;
+}
+
+.search-input {
+  width: 223px;
+  height: 48px;
+  padding-left: 20px;
+  background-color: #f4f7f6;
+  font-size: 13px;
+  border: none;
+}
+.search-input {
+  width: 224px;
+  height: 48px;
+  padding-left: 20px;
+  background-color: #f4f7f6;
+  font-size: 13px;
+  border: none;
+}
+.field,
+.button-mail {
+  position: absolute;
+  clip: rect(1px, 1px, 1px, 1px);
+  height: 1px;
+  width: 1px;
+}
+.btn-mail {
+  display: block;
+  width: 272px;
+  height: 50px;
+  background-color: #B59F5B;
+  text-transform: uppercase;
+  border: none;
+  font-size: 14px;
+  font-family: open-sans-bold, Arial, sans-serif;
+  color: #fff;
+}
+.btn-mail:hover{
+  background-color: #323232;
+}
+.tag-items  {
+  display: flex;
+  flex-wrap: wrap;
+	list-style-type: none;
+  margin-bottom:43px;
+
+}
+.tag-items{
+	padding-left: 0;
+}
+.tag-item  {
+  border: 3px solid #eeeeee;
+  margin-right: 10px;
+  margin-bottom: 6px;
+  padding: 6px 11px;
+  font-family: open-sans-bold, Arial, sans-serif;
+  text-transform: uppercase;
+  font-size: 12px;
+
+
+}
+.tag-item a {
+  color: #0f0d0e;
+}
+.tag-item:hover {
+  border: 3px solid #b59f5b;
+}
+
+.topic-item {
+  font-family: open-sans-bold, Arial, sans-serif;
+  font-size: 14px;
+  margin-top: 14px;
+  margin-left: 3px;
+
+}
+.topic-item a {
+  color: #000000;
+}
+.topic-item a:hover {
+  color: #b59f5b;
+}
+.topic-item::after {
+  content:"";
+  display: block;
+  position: relative;
+  margin-top: 14px;
+  width: 100%;
+  height: 1px;
+  background:#eeeeee;
+}
+.topic-number {
+  font-family: open-sans-bold, Arial, sans-serif;
+  font-size: 12px;
+  color: #b59f5b;
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 6px;
+}
+/*нижний блок с товарами*/
+.products-section {
+  max-width: 1200px;
+	margin: 60px auto 0 auto;
+}
+.products {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.product {
+	width: calc(33.333% - 43.33px);
+	display: flex;
+	flex-direction: column;
+}
+.products-img {
+	width: 80%;
+	margin: 0 auto;
+}
+.product-img {
+	width: 100%;
+}
+.product-text {
+	flex-grow: 1;
+	padding: 40px 20px 25px 20px;
+	margin-top: -30px;
+	border: 3px solid rgba(181, 159, 91, 0.7);
+}
+.text-info {
+  font-family: open-sans-regular, Arial, sans-serif;
+  font-size: 15px;
+  text-align: justify;
+  line-height: 1.5;
+
+}
+.info-link {
+ color: #b59f5b;
+}
+.info-link:hover,
+.info-link:focus {
+	outline: none;
+	text-decoration: underline;
+}
+.price-info {
+  display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.new-price {
+
+	font-size: 20px;
+	line-height: 1.2;
+	font-weight: bold;
+}
+.old-price {
+  font-size: 14px;
+	text-decoration: line-through;
+}
+.button-price {
+  display: inline-block;
+	padding: 20px 30px;
+	font-size: 14px;
+	font-weight: bold;
+	color: white;
+	text-transform: uppercase;
+  background-color: #b59f5b;
+}
+.button-price:hover,
+.button-price:focus {
+	outline: 2px solid #b59f5b;
+	background-color: black;
+}
+.product-text-info {
+	margin-bottom: 20px;
+	font-family: open-sans-regular, Arial, sans-serif;
+	font-size: 15px;
+}
+.title-product {
+	text-align: left;
+	margin-bottom: 5px;
+  font-size: 20px;
+	color: #0f0d0e;
+	font-family: open-sans-bold, Arial, sans-serif;
+	text-transform: uppercase;
+}
+}
+/*footer*/
+.footer {
+  padding-top: 65px;
+  padding-bottom: 65px;
+}
+
+.social {
+  max-width: 1170px;
+  height: 83px;
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f4f7f6;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 72px;
+}
+
+.social-items:nth-child(n+2) {
+  margin-left:30px;
+}
+
+
+
+.social-link {
+  display: block;
+  width: 24px;
+  height: 25px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 20px;
+}
+
+.link-twitter {
+  background-image: url("https://netology-code.github.io/html-2-diploma/sources/images/social/004-twitter.svg");
+}
+
+.link-pinterest {
+  background-image: url("https://netology-code.github.io/html-2-diploma/sources/images/social/001-pinterest.svg");
+}
+
+.link-facebook {
+  background-image: url("https://netology-code.github.io/html-2-diploma/sources/images/social/002-facebook-logo.svg");
+}
+
+.link-instagram {
+  background-image: url("https://netology-code.github.io/html-2-diploma/sources/images/social/005-instagram.svg");
+}
+
+.link-tumblr {
+  background-image: url("https://netology-code.github.io/html-2-diploma/sources/images/social/003-tumblr.svg");
+}
+
+.social-text {
+  position: absolute;
+  clip: rect(1px, 1px, 1px, 1px);
+  height: 1px;
+  width: 1px;
+}
+
+.copy {
+  margin-top: 72px;
+  text-align: center;
+}
+
+.copy-link {
+  text-decoration: none;
+  color: #999999;
+  font-size: 12px;
+  font-family: open-sans-bold, Arial, sans-serif;
+  font-weight: 700;
+}
+
+
+@media (max-width: 640px) {
+
+	.trends-now {
+		display: flex;
+	flex-wrap: wrap;
+	}
+	.trend{
+	width: 100%;
+	}
+	.page {
+    flex-wrap: wrap;
+  }
+	.posts {
+		display: flex;
+	flex-wrap: wrap;
+	}
+	.img-post {
+		width: 100%;
+	}
+
+	.product {
+		width: 100%;
+	}
+	.post  {
+margin-left: 0px;
+}
+	.subtitle  {
+		padding-left: 0px;
+
+	}
+
+	.product {
+	  margin-bottom: 27px;
+	}
+	.footer {
+	  margin-top: 43px;
+	}
+	.logo-menu {
+		flex-direction: column-reverse;
+	}
+	.logo {
+		width: 283px;
+	margin-bottom: -135px;
+margin-top: 165px;
+	}
+	.header-nav {
+		position: absolute;
+		top: 33px;
+		right: 15px;
+		bottom: 165px;
+		/*padding-top: 168px;*/
+	}
+	.header-title {
+	/*	width: 283px;*/
+		font-size: 27px;
+		font-family: open-sans-bold, Arial, sans-serif;
+	margin-top: 41px;
+	padding-bottom: 253px;
+	}
+	.title-post {
+
+		margin-bottom:  15px;
+	}
+
+	.title-post a {
+	  font-family: open-sans-bold, Arial, sans-serif;
+	  font-size: 16px;
+
+}
+
+.post-content {
+  font-family: open-sans-regular, Arial, sans-serif;
+  font-size: 14px;
+  text-align: justify;
+  line-height: 1.5;
+  margin-top: 21px;
+
+}
+.post::after {
+  content:"";
+  display: block;
+  width: 100%;
+  height: 3px;
+  background-color: #eeeeee;
+  margin: 25px auto 35px;
+
+}
+.posts:nth-child(n+2) {
+    margin-top: 0px;
+}
+.product-text-info {
+	font-family: open-sans-regular, Arial, sans-serif;
+	font-size: 15px;
+}
+.title-product {
+	font-size: 17px;
+}
+@media  (min-width: 641px) and (max-width: 1199px) {
+	.img-post {
+		width: 100%;
+	}
+.trends-now {
+	display: flex;
+flex-wrap: wrap;
+}
+.trend {
+width: calc(50% - 4px - 20px - 20px);
+		}
+		.product	{
+				width: calc(50% - 13.5px);
+				margin-bottom: 25px;
+			}
+			.post  {
+  margin-left: 0px;
+}
+.subtitle  {
+	padding-left: 0px;
+}
+
+.main-posts {
+		margin-right: 35px;
+	}
+		}
+		@media  (max-width: 1199px) {
+			.menu-burger {
+				display: block;
+				width: 1.25em;
+				height: 1em;
+				border: none;
+				padding: 0;
+				background-color: transparent;
+				font-size: 20px;
+				position: relative;
+				text-indent: -9999px;
+				cursor: pointer;
+			}
+			.menu-burger:hover,
+			.menu-burger:focus {
+			border: none;
+			outline: 1px solid #b59f5b;
+			outline-offset: 10px;
+		}
+			.menu-burger:before, .menu-burger:after {
+				content:"";
+				width: 100%;
+				height: 20%;
+				border-radius: 5px;
+				background-color: #ffffff;
+				position: absolute;
+				left: 0;
+			}
+			.menu-burger:before {
+				top: 0;
+			}
+			.menu-burger:after {
+				bottom: 0;
+			}
+			.menu-burger-label {
+				width: 100%;
+				height: 20%;
+				margin-top: -0.1em;
+				border-radius: 5px;
+				background-color: #ffffff;
+				position: absolute;
+				left: 0;
+				top: 50%;
+			}
+			/*убираем меню*/
+			.menu-list {
+		    display: none;
+		  }
+		}
+		.product-text-info {
+			font-family: open-sans-regular, Arial, sans-serif;
+			font-size: 15px;
+		}
+		.title-product {
+			font-size: 17px;
+		}
+
+	@media  (min-width: 1200px) {
+		.menu-burger {
+			display: none;
+		}
+	}
+	.trend-title {
+		font-family: open-sans-bold, Arial, sans-serif;
+		font-size: 20px;
+
+	}
+}
+	/*popup*/
+
+.popups {
+    display: flex;
+    position: fixed;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+
+
+}
+
+  .shown {
+display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.popups-container {
+width: 390px;
+  height: 587px;
+  border: 1px solid black;
+ background-color: white;;
+ /*padding: 50px 40px;*/
+}
+
+.feedback-form {
+  padding-left: 27px;
+  padding-right: 27px;
+ line-height: 1.5;
+}
+.popup-title {
+    font-family: open-sans-bold, Arial, sans-serif;
+  font-size: 20px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+   padding-top: 54px;
+  margin-bottom: 30px;
+}
+.popup-title::after {
+	content: "";
+	display: block;
+	width: 65px;
+	height: 3px;
+	margin: 15px auto 30px auto;
+	background-color: #b59f5b;
+	opacity: 0.4;
+}
+.question-select-list {
+  display: inline-block;
+  box-sizing: border-box;
+  width: 332px;
+  height: 38px;
+
+ /* padding-left: 10px;
+  padding-right: 25px; */
+
+  margin: 0;
+
+  border: 1px solid white;
+  background-color: #f9f9f9;
+
+  font-size: 14px;
+  font-family: Arial,sans-serif;
+  color: #333333;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: url(https://netology-code.github.io/html-2-homeworks/form-elements/city-select/img/select-arrows.svg);
+  background-repeat: no-repeat;
+  background-position: right 5px center;
+ margin-bottom: 30px;
+}
+.textarea-form {
+ max-width: 330px;
+  min-width: 332px;
+ max-height: 125px;
+ min-height: 125px;
+border: 1px solid white;
+  background-color: #f9f9f9;
+
+  font-size: 14px;
+  font-family: Arial,sans-serif;
+  color: #333333;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+
+  background-repeat: no-repeat;
+  background-position: right 5px center;
+  margin-bottom: 30px;
+  position: relative;
+}
+.send-form {
+ width: 334px;
+ height: 45px;
+  display: block;
+  background-color: #B59F5B;
+  text-transform: uppercase;
+  border: none;
+  font-size: 14px;
+  font-family: open-sans-bold, Arial, sans-serif;
+  color: #fff;
+}
+.send-form:hover {
+  background-color: #323232;
+}
+.radio-group {
+  display: inline-block;
+  margin-bottom: 30px;
+}
+.form-hint {
+  display: block;
+    font-family: open-sans-regular, Arial, sans-serif;
+    font-size: 13px;
+}
+.radio-group-text {
+    font-family: open-sans-regular, Arial, sans-serif;
+    font-size: 13px;
+
+}
+
+   .radio-group-text::before {
+  content: "";
+    display: inline-block;
+
+    width: 15px;
+    height: 15px;
+    vertical-align: middle;
+    background: url(../svg/form-empty-circle.svg) no-repeat center center;
+    background-size: 100%;
+}
+
+
+.form-lable {
+     font-family: open-sans-regular, Arial, sans-serif;
+    font-size: 13px;
+}
+.question-select-list {
+color: #999999;
+
+}
+.textarea-form {
+ color: #999999;
+  font-size: 13px;
+
+}
+.feedback {
+position: absolute;
+ width: 1px;
+height: 1px;
+clip: rect(1px, 1px, 1px, 1px);
+}
